@@ -1,5 +1,7 @@
-
-public class Team7 extends SortCompetition {
+//Team 7
+//Jason Wu & Xing Chen
+//Period 2
+public class Team7SortCompetition extends SortCompetition {
 
 	
 	public int compareTo(SortCompetition t)
@@ -49,8 +51,9 @@ public class Team7 extends SortCompetition {
 			for (int j = 0; j < arr[i].length;j++) {
 				insertionSort(arr[i]);
 			}
-			//save median
-			
+		}
+		for (int i = 0; i < arr.length-1;i++) {
+			if (arr[i][])
 		}
 		
 		return 0;
