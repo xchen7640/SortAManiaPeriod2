@@ -25,7 +25,7 @@ public class Team7SortCompetition extends SortCompetition {
 	
 	public int challengeOne(int[] arr) {
 		selectionSort(arr);
-		return (arr[arr.length/2] + arr[(arr.length/2) + 1])/2;
+		return ((double)arr[arr.length/2] + (double)arr[(arr.length/2+1) + 1])/2;
 	}
 	
 	public int challengeTwo(String[] arr, String query) {
@@ -42,7 +42,7 @@ public class Team7SortCompetition extends SortCompetition {
 	
 	public int challengeThree(int[] arr) {
 		insertionSort(arr);
-		return (arr[arr.length/2] + arr[(arr.length/2) + 1])/2;
+		return ((double)arr[arr.length/2] + (double)arr[(arr.length/2+1)])/2;
 	}
 	
 	
@@ -53,10 +53,11 @@ public class Team7SortCompetition extends SortCompetition {
 			}
 		}
 		for (int i = 0; i < arr.length-1;i++) {
-			if (arr[i][])
+			if (arr[i][((double)arr[arr.length/2] + (double)arr[(arr.length/2+1)])/2] > arr[i+1][((double)arr[arr.length/2] + (double)arr[(arr.length/2+1)])/2])
+				Swap(arr,i,i+1);
 		}
 		
-		return 0;
+		return arr[((arr.length/2)+(arr.length/2+1))/2][((double)arr[((arr.length/2)+(arr.length/2+1))/2][arr.length/2] + (double)arr[((arr.length/2)+(arr.length/2+1))/2][(arr.length/2+1)])/2];
 		
 	}
 	
@@ -65,8 +66,6 @@ public class Team7SortCompetition extends SortCompetition {
 			if (arr[i].equals(query)) 
 			return i ;
 		}
-			
-		
 		return -1;
 	}
 	
